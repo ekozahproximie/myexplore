@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GbCameraActivity!</string>
+    <string name="app_name">GbCamera</string>
+    <!-- Default scene mode setting. -->
+    <string name="pref_camera_scenemode_default" translatable="false">auto</string>
+
+    <!--
+         Default picture quality setting. See
+         pref_camera_jpegquality_entryvalues for possible values
+    -->
+    <string name="pref_camera_jpegquality_default" translatable="false">superfine</string>
+
+    <!-- Default color effect setting. -->
+    <string name="pref_camera_coloreffect_default" translatable="false">none</string>
+
+    <!-- Exposure settings in preference -->
+
+    <string name="pref_exposure_default" translatable="false">0</string>
+
+    <!-- Default flash mode setting. -->
+    <string name="pref_camera_flashmode_default" translatable="false">auto</string>
+
+    <!-- Value for flash off setting -->
+    <string name="pref_camera_flashmode_no_flash" translatable="false">no_flash</string>
+
+    <!-- Default white balance setting. -->
+    <string name="pref_camera_whitebalance_default" translatable="false">auto</string>
+
+    <!-- Default focus mode setting. -->
+    <string name="pref_camera_focusmode_default" translatable="false">auto</string>
+
+    <!-- Settings screen, Picture size dialog radio button choices -->
+    <string name="pref_camera_picturesize_entry_2592x1936">5M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">2M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1024x768">1M Pixels</string>
+    <string name="pref_camera_picturesize_entry_640x480" translatable="false">VGA</string>
+    <string name="pref_camera_picturesize_entry_320x240" translatable="false">QVGA</string>
+
+</resources>

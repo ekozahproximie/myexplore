@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <string-array name="category">
+        <item>Fire</item>
+        <item>Police</item>
+        <item>Electric</item>
+        <item>CallTaxi</item>
+        <item>Pizza</item>
+        <item>Puncher</item>
+        <item>ServiceMan</item>
+        <item>Mechanic</item>
+        <item>Developer</item>
+    </string-array>
+    <string-array name="agentid">
+        <item>@string/agent_1</item>
+        <item>@string/agent_2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.spime.groupon" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="7" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true">
+		<activity android:name=".Groupon" android:label="@string/app_name">
+		</activity>
+		<activity android:name="com.spime.groupon.ui.GrouponDealsList"
+			android:label="@string/app_name">
+		</activity>
+		<activity android:name="com.spime.groupon.ui.GrouponSingleDealViewer"
+			android:label="@string/app_name">
+		</activity>
+		<activity android:name="com.spime.groupon.ui.GrouponCityList"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	</application>
+	<uses-permission android:name="android.permission.CLEAR_APP_CACHE"></uses-permission>
+	<uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.DELETE_CACHE_FILES"></uses-permission>
+	<uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>

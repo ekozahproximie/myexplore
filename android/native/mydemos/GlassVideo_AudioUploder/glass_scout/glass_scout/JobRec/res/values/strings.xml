@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, JobRecActivity!</string>
+    <string name="app_name">JobRec</string>
+    <string name="flag_in">IN</string>
+    <string name="flag_we">WE</string>
+    <string name="flag_ds">DS</string>
+    <string name="flag_cr">CR</string>
+    <string name="flag_ot">OT</string>
+    <string name="flag_nd">ND</string>
+    <string name="flag_nr">NR</string>
+    <string name="unknown">Unknown</string>
+    <string name="service_details">Local Service</string>
+	<string name="dev_server">Development Server</string>
+	<string name="pro_server">Production Server</string>
+	<string name="test_server">Test Server</string>
+	<string name="rel_server">Release Server</string>
+  
+</resources>

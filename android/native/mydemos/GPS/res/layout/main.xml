@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TableLayout android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+	 <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/next"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/nextinterval"
+                android:layout_width="90dp"
+                android:text="@string/nextinte"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="phone"
+                android:hint="@string/sec" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/sec"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/intervel"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/interval"
+                android:layout_width="90dp"
+                 android:text="@string/onoffinte"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 android:inputType="phone"
+                android:hint="@string/millisec" />
+               <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/millisec"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/testcount"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/testcount"
+                android:layout_width="90dp"
+                 android:text="@string/testvalue"
+                  android:inputType="phone"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/remainingtest"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/remainingcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/start" android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/start"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/stop" android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/stop"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="DialogBackdropColor">#99000000</color>
+    <color name="rel_flg_lat_lon_color">#cfffffff</color>
+    <color name="dlg_border_grey">#C0C0C0</color>
+    <color name="ButtonTextColor">@android:color/black</color>
+    <color name="blue_txt_color">#4169E1</color>
+    <color name="grey_thick">#808080</color>
+
+</resources>

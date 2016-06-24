@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_sun" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        tools:context=".MainActivity" />
+
+    <LinearLayout
+        android:id="@+id/butttongroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/report"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reportdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/track"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/agent"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/agent"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/powertcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/poweredtcc"
+        android:textColor="@android:color/white"
+        android:textSize="10dp"
+        android:textStyle="normal"
+        tools:context=".MainActivity" />
+
+</RelativeLayout>

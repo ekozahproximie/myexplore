@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="fill_parent" >
+<com.google.android.maps.MapView 
+    android:id="@+id/mapView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:apiKey="0abATGTiSFFE43Gkk9au_BCR9oXhSNQestrbjWg"
+    android:clickable="true" />
+ <Button
+            android:id="@+id/sendloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_blue"
+            android:onClick="onClick"
+            android:text="@string/sendloc"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" >
+        </Button>
+</RelativeLayout>

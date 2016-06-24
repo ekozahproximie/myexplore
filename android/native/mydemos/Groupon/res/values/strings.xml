@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, Groupon!</string>
+    <string name="app_name">Groupon</string>
+    <string name="value">Value</string>
+    <string name="discount">Discount</string>
+    <string name="price">Price</string>
+    <string name="bought">bought</string>
+     <string name="limit">(Limited quantity available)</string>
+    <string name="to_deal">more needed to get the deal</string>
+    <string name="deal_on">The deal is on!</string>
+     <string name="tipped_at">Tipped at</string>
+     <string name="with">with</string>
+     <string name="buy">Buy Now</string>
+	<string name="type_tosearch">Search</string>
+	<string name="other">Others</string>
+	<string name="choose">Choose catagory</string>
+	<string name="all">ALL</string>
+	<string name="day">Day</string>
+	<string name="days">Days</string>
+    <string name="later">Try again later</string>
+    <string name="lefttime">Time Left To Buy</string>
+</resources>

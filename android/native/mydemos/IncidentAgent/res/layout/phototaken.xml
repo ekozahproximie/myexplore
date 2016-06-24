@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/headertoolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_middle_background_on"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_blue"
+            android:onClick="onClick"
+            android:text="@string/back"
+            android:textColor="@android:color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/photodone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_blue"
+            android:onClick="onClick"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:visibility="gone" >
+        </Button>
+
+        
+        <Button
+            android:id="@+id/deletephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_blue"
+            android:onClick="onClick"
+            android:text="@string/delete"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/photoview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bar_bottom"
+        android:contentDescription="@string/no"
+        android:layout_below="@+id/headertoolbar" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/bar_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cell_middle_background_on"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/takeanother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_takephoto"
+            android:onClick="onClick" >
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

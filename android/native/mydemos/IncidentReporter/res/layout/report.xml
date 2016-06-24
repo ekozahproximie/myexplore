@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_sun" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_blue"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/report"
+            android:textColor="@android:color/black"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+  		<Button
+                android:id="@+id/locmap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_blue"
+                android:onClick="onClick"
+                android:text="@string/loctionfrommap"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" >
+            </Button>
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_1_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locmap"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_background"
+            android:paddingBottom="10dp" >
+
+            <!-- android:background="@color/rel_det_sev_nts_color"> -->
+
+
+            <!--
+            <RelativeLayout
+                android:id="@+id/rl_lst_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/lbl_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/latitude"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/ButtonTextColor" />
+
+                <TextView
+                    android:id="@+id/txt_detail_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/longitude"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/ButtonTextColor"  />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/detail_Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rl_lst_detail"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/grey_thick" />
+            -->
+            <!-- android:layout_below="@+id/detail_Divider" -->
+
+          
+
+            <RelativeLayout
+                android:id="@+id/rl_latlon_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_locmap"
+                android:layout_margin="10dp"
+                android:onClick="onClick" >
+
+                <LinearLayout
+                    android:id="@+id/no_id"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@+id/ed_lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/latitude"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/ButtonTextColor" />
+
+                <EditText
+                    android:id="@+id/ed_lon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/longitude"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/ButtonTextColor" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/lat_lon_detail_Divider"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rl_latlon_detail"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/grey_thick" />
+
+            <RelativeLayout
+                android:id="@+id/rl_lst_severity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lat_lon_detail_Divider"
+                android:layout_margin="10dp"
+                android:onClick="onClick" >
+
+                <!-- android:layout_below="@+id/detail_Divider" -->
+
+                <TextView
+                    android:id="@+id/lbl_severity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/category"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/ButtonTextColor" />
+
+                <TextView
+                    android:id="@+id/txt_severity_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/blue_txt_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelativeLayout_1_2"
+            android:layout_margin="10dp"
+            android:background="@drawable/dialog_background" >
+
+            <ImageView
+                android:id="@+id/img_template"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:contentDescription="@string/no"
+                android:onClick="onClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default_flag_photo" />
+
+            <LinearLayout
+                android:id="@+id/no_id"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <EditText
+                android:id="@+id/txt_notes"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/img_template"
+                android:background="@drawable/dialog_background"
+                android:gravity="fill_horizontal"
+                android:hint="@string/notes_str"
+                android:inputType="textMultiLine"
+                android:maxLength="140"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/lbl_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/img_template"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/latitude"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ButtonTextColor" />
+
+            <TextView
+                android:id="@+id/lbl_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_latitude"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/longitude"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/ButtonTextColor" />
+
+            <TextView
+                android:id="@+id/txt_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lbl_latitude"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/txt_longitude_str"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/DialogBackdropColor" />
+
+            <TextView
+                android:id="@+id/txt_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lbl_longitude"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@+id/txt_longitude"
+                android:text="@string/txt_latitude_str"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/DialogBackdropColor" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bottom_info"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_blue"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" >
+        </Button>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bottom_info"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_blue"
+            android:onClick="onClick"
+            android:text="@string/send"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" >
+        </Button>
+    </RelativeLayout>
+
+</ScrollView>

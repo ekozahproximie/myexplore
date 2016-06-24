@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scout</string>
+    <string name="action_goodbye">Goodbye</string>
+    <string name="action_exit">Goodbye</string>
+    <string name="action_audio">Audio</string>
+    <string name="action_video">Video</string>
+    <string name="welcome_user">Welcome AG user</string>
+    <string name="commands">choose Audio or Video</string>
+    <string name="menu_audio">Audio</string>
+	<string name="menu_video">Video</string>
+	<string name="menu_exit">Exit</string>
+	<string name="glass_voice_trigger">mark flag</string>
+    
+</resources>

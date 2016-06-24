@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Automation GPS Enable</string>
+    <string name="app_name">GPS Enable Test</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="intervel">On/Off Interval</string>
+    <string name="millisec">milliSec</string>
+    <string name="sec">Sec</string>
+    <string name="testcount">Test Count</string>
+    <string name="remainingtest">Remaining Test</string>
+    <string name="next">Interval of next on/off</string>
+    <string name="onoffinte">5000</string>
+    <string name="nextinte">3</string>
+    <string name="testvalue">3</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/no"
+        android:focusable="false"
+        android:src="@drawable/button_takephoto" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@android:color/white"
+        android:text="@string/agent" />
+
+  
+    
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@android:color/white"
+        android:text="@string/status" />
+    
+    <TextView
+        android:id="@+id/statusinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_toRightOf="@+id/status"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:text="@string/notresolved" />
+    
+	  <TextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@android:color/white"
+        android:text="@string/agent" />
+    <Button
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:focusable="false"
+        android:background="@drawable/gmapicon" />
+
+    <TextView
+        android:id="@+id/catagory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="10dp"
+        android:text="@string/agent"
+        android:textColor="@color/blue_txt_color" />
+
+</RelativeLayout>

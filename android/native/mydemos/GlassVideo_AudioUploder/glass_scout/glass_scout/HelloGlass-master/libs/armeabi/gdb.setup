@@ -1,0 +1,3 @@
+set solib-search-path /cygdrive/d/Codesbackup/AgMantra/FarmMap/obj/local/armeabi
+directory /cygdrive/e/android_related_stuff/android-ndk-r4b/build/platforms/android-3/arch-arm/usr/include
+directory /cygdrive/d/Codesbackup/AgMantra/FarmMap/jni

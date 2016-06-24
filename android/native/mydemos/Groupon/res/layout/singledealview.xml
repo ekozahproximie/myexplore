@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="fill_parent" 
+	android:background="#FFFFFF">
+<RelativeLayout 
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	 >
+	<TextView android:layout_width="wrap_content" android:layout_marginTop="30dip"
+		android:textSize="10pt" android:layout_height="wrap_content"
+		android:gravity="left" android:textStyle="bold" android:id="@+id/maintxt"
+		android:textColor="#494949" android:layout_marginLeft="10dip"></TextView>
+	
+	<TextView android:layout_width="wrap_content" 
+		android:text="@string/lefttime" 
+		android:layout_below="@+id/maintxt"
+		android:textSize="7pt" android:layout_height="wrap_content"
+		android:gravity="center" android:textStyle="bold" 
+		android:id="@+id/lefttobuytxt"
+		android:textColor="#494949" android:layout_marginLeft="10dip"></TextView>
+	
+	<ImageView android:src="@drawable/hourglass" 
+	android:layout_below="@+id/lefttobuytxt" 
+	
+	android:id="@+id/hoursglass" android:layout_marginTop="4dip"
+	android:layout_width="wrap_content" android:layout_marginLeft="10dip"
+	android:layout_alignParentLeft="true"
+	android:layout_height="wrap_content"></ImageView>
+	<TextSwitcher android:layout_width="wrap_content" 
+	android:layout_toRightOf="@+id/hoursglass"
+		android:textSize="10pt" android:layout_height="wrap_content"
+		android:layout_below="@+id/lefttobuytxt" android:textStyle="bold" 
+		android:id="@+id/timetoleft" android:layout_marginTop="9dip"
+		android:textColor="#494949" android:layout_marginLeft="10dip"></TextSwitcher>
+	
+	
+	<LinearLayout android:gravity="left" android:id="@+id/mainimgla"
+	android:layout_marginTop="9dip"
+		android:layout_below="@+id/timetoleft" android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:id="@+id/mainimg" android:layout_width="fill_parent"
+			android:src="@drawable/icon"
+			android:layout_height="wrap_content" 
+			></ImageView>
+
+	</LinearLayout>
+	<TableLayout android:id="@+id/ratetable" android:gravity="center"
+	android:layout_marginTop="5dip"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_below="@+id/mainimgla" android:stretchColumns="1">
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/value"
+				android:gravity="left" android:textStyle="bold" android:textColor="#494949"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/discount" android:paddingLeft="10dip"
+				android:gravity="center" android:textStyle="bold" android:textColor="#494949"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/price"
+				android:gravity="right" android:layout_marginRight="50dip"
+				android:textStyle="bold" android:textColor="#494949"></TextView>
+		</TableRow>
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip">
+			<TextView android:id="@+id/value" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:text="$45" android:gravity="left" android:textStyle="bold"
+				android:textColor="#494949"></TextView>
+			<TextView android:id="@+id/discount" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="$45"
+				android:layout_gravity="center" android:gravity="center"
+				android:textStyle="bold" android:textColor="#494949"></TextView>
+			<TextView android:id="@+id/price" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="$45"
+				android:gravity="right" android:layout_gravity="left"
+				
+				android:layout_marginRight="50dip" android:textStyle="bold" android:textColor="#494949"></TextView>
+		</TableRow>
+	</TableLayout>
+	<TextView android:id="@+id/buytxt" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/ratetable"
+		android:text="@string/buy" android:layout_marginLeft="10dip" android:textStyle="bold"
+		android:textSize="10pt" android:gravity="center" android:textColor="#0000FF"
+		android:layout_marginTop="2dip" android:layout_marginRight="10dip"></TextView>
+	<RelativeLayout android:id="@+id/notTippedBar"
+		android:visibility="gone" android:layout_below="@+id/buytxt"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/soldQuantity"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="" android:layout_marginTop="2dip" android:textColor="#494949"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"></TextView>
+		<ProgressBar android:id="@+id/progress"
+			style="?android:attr/progressBarStyleHorizontal"
+
+			android:layout_marginLeft="10dip" android:layout_marginTop="2dip"
+			android:layout_marginRight="10dip" android:layout_below="@+id/soldQuantity"
+			android:layout_width="fill_parent" android:layout_height="12dip" />
+		<TextView android:id="@+id/tippingPointLow"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/progress" android:text="0"
+			android:layout_marginTop="2dip" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:layout_alignParentLeft="true" android:textColor="#494949"></TextView>
+		<TextView android:id="@+id/tippingPointHigh"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/progress" android:text=""
+			android:layout_marginTop="2dip" android:layout_marginRight="10dip" android:textColor="#494949"
+			android:layout_alignParentRight="true"></TextView>
+		<TextView android:id="@+id/tobedealtxt" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@+id/tippingPointLow"
+			android:text="sisis" android:layout_marginLeft="10dip" android:textColor="#494949"
+			android:layout_marginTop="2dip" android:layout_marginRight="10dip"
+			android:layout_alignParentLeft="true"></TextView>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/TippedBar" android:visibility="gone"
+		 android:layout_below="@+id/buytxt" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/TipsoldQuantity" android:textColor="#494949"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="sdsd" android:layout_marginTop="2dip"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"></TextView>
+		
+		<TextView android:id="@+id/tippedInfo" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@+id/TipsoldQuantity"
+			android:text="@string/deal_on" android:textStyle="bold"
+			android:layout_marginLeft="10dip" android:textColor="#494949"
+			android:layout_marginTop="2dip" android:layout_marginRight="10dip"
+			android:layout_alignParentLeft="true"></TextView>
+			<TextView android:id="@+id/tippedTimeInfo" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_below="@+id/TipsoldQuantity"
+			android:text="" android:layout_marginLeft="2dip" android:layout_toRightOf="@+id/tippedInfo"
+			android:layout_marginTop="2dip" android:layout_marginRight="10dip"
+			android:textColor="#494949"
+			></TextView>
+	</RelativeLayout>
+	<TextView android:id="@+id/htmltxt" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/buytxt"
+		
+		android:text="" android:layout_marginLeft="10dip" android:textColor="#494949"
+		android:layout_marginTop="90dip" android:layout_marginRight="10dip"></TextView>
+
+</RelativeLayout>
+</ScrollView>

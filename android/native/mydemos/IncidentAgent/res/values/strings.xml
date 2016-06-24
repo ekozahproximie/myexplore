@@ -1,0 +1,64 @@
+<resources>
+	
+	
+    <string name="app_name">Incident Responder</string>
+    <string name="accept">Accept</string>
+    <string name="incident_detail">Incident details</string>
+    <string name="agent">I Am Agent</string>
+    <string name="agent_1">101</string>
+    <string name="agent_2">102</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="category">Category</string>
+    <string name="categorytype">Category Type</string>
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="choose">Choose Type</string>
+    <string name="delete">Delete</string>
+    <string name="done">Done</string>
+    <string name="error_msg_sdcard">Your SDCard isn\'t currently available. Please insert it.</string>
+    <string name="error_msg_sdcard_write">Can\'t write to the SDCard.</string>
+    <string name="error_no_sd_card">Unable to access external or internal storage; check your SD card.</string>
+    <string name="exit_message">Would you like to exit the Application?</string>
+    <string name="exit_title">Exit the App?</string>
+    <string name="funding">Need more funding</string>
+    <string name="geo_loc_error">Error in reading Geo location.</string>
+    <string name="gps_disabled">GPS is currently disabled. Enable GPS in your device settings to access your location.</string>
+    <string name="gps_title">GPS Disabled</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="incidentcapture">Incident Capture</string>
+    <string name="incident_not">No Incident are assigned to you.</string>
+    <string name="kidding">Are  you kidding? You expect all this to work in 8 hrs?</string>
+    <string name="loctionfrommap">Take Location from Map</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="login">Login As: (agent id)</string>
+    <string name="menu_settings">Settings</string>
+     <string name="mytask">My Task</string>
+      <string name="mytasklist">My Task List</string>
+    <string name="no">no</string>
+     <string name="notify_title">Incident Alert</string>
+    <string name="notify_message">New Incident Alert Recieved</string>
+    <string name="poweredtcc">Powered by TCC</string>
+    <string name="report">Report</string>
+    <string name="resolverthis">Resolve this</string>
+    <string name="resolvereport">Resolve Report</string>
+    <string name="myreport">MyLocation Report</string>
+    <string name="settings">Settings</string>
+    <string name="send">Send</string>
+    <string name="status">Status :</string>
+    <string name="sendloc">Send Location</string>
+    <string name="track">Track</string>
+    <string name="notresolved">Not Resolved</string>
+    <string name="notes_str">Type your comments here&#8230;&#8230;&#8230;</string>
+    <string name="title_activity_main">Incident Responder</string>
+    <string name="txt_latitude_str">39.89719</string>
+    <string name="txt_longitude_str">-115.35117</string>
+    <string name="update">Update data</string>
+    <string name="unknown">Unknown</string>
+    <string name="yes">Yes</string>
+    <string name="your">Your Incident send to server</string>
+    
+    
+    
+
+</resources>
