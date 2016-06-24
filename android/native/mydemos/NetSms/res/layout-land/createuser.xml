@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:scrollbars="vertical">
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="wrap_content"  android:padding="20px">
+
+		<TextView android:id="@+id/TextViewTitle"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="@string/usertitle" android:textSize="10pt">
+		</TextView>
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content" android:layout_width="fill_parent">
+			<TableRow>
+				<TextView 
+					android:layout_height="wrap_content" android:text="Enter Your Name"
+					 android:layout_width="wrap_content" />
+				<EditText android:id="@+id/EditTextName"
+					android:layout_height="wrap_content" android:hint=" Name" android:text=""
+					android:inputType="textPersonName" android:layout_width="120px" />
+			</TableRow>
+			<TableRow>
+			<TextView 
+					android:layout_height="wrap_content" android:text="Enter email id"
+					 android:layout_width="wrap_content" />
+				<EditText android:id="@+id/EditTextEmail"
+					android:layout_height="wrap_content" android:hint="Email id" 
+					
+					android:inputType="textEmailAddress" android:layout_width="120px" >
+				</EditText>
+			</TableRow>
+			<TableRow>
+			<TextView android:text="Date of Birth"
+					android:layout_height="wrap_content" 
+					 android:layout_width="wrap_content">
+				</TextView>
+				
+				<EditText android:id="@+id/dob"
+					android:layout_height="wrap_content" android:hint="DD/MM/YYYY"
+					android:inputType="date" android:layout_width="fill_parent">
+				</EditText>
+			</TableRow>
+			<TableRow>
+			<TextView android:text="Your Phone no"
+					android:layout_height="wrap_content" 
+					 android:layout_width="fill_parent">
+				</TextView>
+				
+				<EditText android:id="@+id/phoneno"
+					android:layout_height="wrap_content" android:hint="phone no" android:maxLength="10"
+					android:inputType="phone" android:layout_width="fill_parent" android:text=""
+					android:digits="0123456789" android:numeric="integer">
+				</EditText>
+			</TableRow>
+			<TableRow>
+			<Button android:id="@+id/ok" android:text="Ok"
+					android:layout_height="wrap_content" 
+					 android:layout_width="wrap_content">
+				</Button>
+				
+				<Button android:id="@+id/cancel" android:text="Cancel"
+					android:layout_height="wrap_content" 
+					 android:layout_width="wrap_content">
+				</Button>
+			</TableRow>
+			
+			<!--Put form controls here-->
+		</TableLayout>
+			<TextView android:textSize="12px" android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"
+			android:text="@string/userinfo"></TextView>
+		
+	</LinearLayout>
+	
+</ScrollView>  

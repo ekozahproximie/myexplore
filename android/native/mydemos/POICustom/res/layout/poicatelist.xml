@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent"
+		
+		android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:addStatesFromChildren="true" android:id="@+id/rl_poi_icons">
+		<ToggleButton android:layout_alignParentTop="true"
+			android:layout_marginLeft="40dip" android:layout_marginTop="10dip"
+			android:clickable="true" android:soundEffectsEnabled="true"
+			android:id="@+id/poi_airport" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:ellipsize="end"
+			android:background="@drawable/airport_poi_bg" android:focusable="true"
+			android:textOn=" " android:textOff=" ">
+		</ToggleButton>
+
+		<ToggleButton android:layout_below="@+id/poi_airport"
+			android:layout_marginTop="10dip" android:layout_alignLeft="@+id/poi_airport"
+			android:id="@+id/poi_autoservice" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/carservice_poi_bg"
+			android:textOn="" android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:layout_below="@+id/poi_autoservice"
+			android:layout_marginTop="10dip" android:layout_alignLeft="@+id/poi_autoservice"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/poi_hospital" android:text=" "
+			android:background="@drawable/hospital_poi_bg" android:textOff=" "
+			android:textOn=" "></ToggleButton>
+
+		<ToggleButton android:layout_below="@+id/poi_hospital"
+			android:layout_marginTop="10dip" android:layout_alignLeft="@+id/poi_hospital"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text=" " android:id="@+id/poi_parking" android:background="@drawable/parking_poi_bg"
+			android:textOff=" " android:textOn=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_parking"
+			android:layout_marginLeft="20dip" android:layout_alignTop="@+id/poi_parking"
+			android:layout_alignBottom="@+id/poi_parking" android:text=" "
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/shopping_poi_bg" android:textOff=" "
+			android:textOn=" " android:id="@+id/poi_shop"></ToggleButton>
+
+		<ToggleButton android:text=" " android:id="@+id/poi_publictransport"
+			android:layout_marginLeft="20dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/trans_poi_bg"
+			android:textOn=" " android:textOff=" " android:layout_alignBottom="@+id/poi_shop"
+			android:layout_alignTop="@+id/poi_shop" android:layout_toRightOf="@+id/poi_shop"></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_hospital"
+			android:layout_alignTop="@+id/poi_hospital"
+			android:layout_alignBottom="@+id/poi_hospital" android:layout_width="wrap_content"
+			android:layout_marginLeft="20dip" android:layout_height="wrap_content"
+			android:id="@+id/poi_hotel" android:background="@drawable/hotel_poi_bg"
+			android:checked="true" android:textOn=" " android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_hotel"
+			android:layout_alignTop="@+id/poi_hotel" android:layout_alignBottom="@+id/poi_hotel"
+			android:layout_marginLeft="20dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text=" " android:id="@+id/poi_entertainment"
+			android:background="@drawable/entertainment_poi_bg" android:textOn=" "
+			android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:id="@+id/poi_police"
+			android:background="@drawable/police_poi_bg" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_toRightOf="@+id/poi_entertainment"
+			android:layout_alignTop="@+id/poi_entertainment"
+			android:layout_alignBottom="@+id/poi_entertainment" android:text=" "
+			android:layout_marginLeft="20dip" android:checked="true"
+			android:clickable="true" android:textOff=" " android:textOn=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_autoservice"
+			android:layout_alignTop="@+id/poi_autoservice"
+			android:layout_alignBottom="@+id/poi_autoservice" android:id="@+id/poi_sport"
+			android:layout_marginLeft="20dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:clickable="true"
+			android:soundEffectsEnabled="true" android:checked="true"
+			android:background="@drawable/sport_poi_bg" android:textOn=" "
+			android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_sport"
+			android:layout_alignTop="@+id/poi_sport" android:layout_alignBottom="@+id/poi_sport"
+			android:layout_marginLeft="20dip" android:id="@+id/poi_leisure"
+			android:background="@drawable/leisure_poi_bg" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:checked="false" android:textOn=" "
+			android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_leisure"
+			android:layout_alignTop="@+id/poi_leisure"
+			android:layout_alignBottom="@+id/poi_leisure" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/poi_gas"
+			android:layout_marginLeft="20dip" android:text=" "
+			android:background="@drawable/gas_poi_bg" android:textOff=" "
+			android:textOn=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_airport"
+			android:layout_alignTop="@+id/poi_airport"
+			android:layout_alignBottom="@+id/poi_airport" android:id="@+id/poi_atm"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:clickable="true" android:layout_marginLeft="20dip"
+			android:checked="true" android:soundEffectsEnabled="true"
+			android:background="@drawable/atm_poi_bg" android:textOn=" "
+			android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:layout_toRightOf="@+id/poi_atm"
+			android:layout_alignTop="@+id/poi_atm" android:layout_alignBottom="@+id/poi_atm"
+			android:layout_marginLeft=" 20dip" android:id="@+id/poi_restaurant"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:clickable="true" android:soundEffectsEnabled="true"
+			android:background="@drawable/restaurant_poi_bg" android:textOn=" "
+			android:textOff=" ">
+		</ToggleButton>
+		<ToggleButton android:layout_toRightOf="@+id/poi_restaurant"
+			android:layout_alignTop="@+id/poi_restaurant"
+			android:layout_alignBottom="@+id/poi_restaurant" android:id="@+id/poi_transport"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:background="@drawable/transport_poi_bg" android:textOn=" "
+			android:layout_marginLeft="20dip" android:textOff=" "></ToggleButton>
+
+		<ToggleButton android:id="@+id/poi_sseeing"
+			android:background="@drawable/sightseeing_poi_bg" android:text=" "
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/poi_publictransport"
+			android:layout_alignTop="@+id/poi_publictransport"
+			android:layout_alignBottom="@+id/poi_publictransport"
+			android:textOff=" " android:layout_marginLeft="20dip" android:textOn=" "></ToggleButton>
+	</RelativeLayout>
+</RelativeLayout>

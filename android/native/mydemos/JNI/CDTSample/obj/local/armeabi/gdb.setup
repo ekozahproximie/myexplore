@@ -1,0 +1,4 @@
+set solib-search-path /cygdrive/e/Mobile/Project/CDTSample/obj/local/armeabi
+directory /cygdrive/c/android-ndk-r4b/build/platforms/android-8/arch-arm/usr/include
+directory /cygdrive/e/Mobile/Project/CDTSample/jni
+target remote :5039

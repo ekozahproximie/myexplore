@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.widgets.joystick.DualJoystickView
+        android:id="@+id/dualjoystickView"
+        android:layout_width="fill_parent"
+        android:layout_height="175dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:text="X" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewX1"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:text="X" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewX2"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewY1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewY2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

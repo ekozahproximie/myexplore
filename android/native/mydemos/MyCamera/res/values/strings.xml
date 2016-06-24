@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, MyCamera!</string>
+    <string name="app_name">MyCamera</string>
+    <string name="color_effect">Color Effects</string> 
+  <string name="white_balance">White Balance</string> 
+  <string name="app_desc">Sample camera application from www.androiddevblog.net\nA sample camera applicaiton to demonstrate the use of camera effects.\n\nFor more infromation please visit:\nhttp://www.androiddevblog.net\n</string> 
+  <string name="start_application">Start camera, action, cut :)</string> 
+     <string name="take_picture">Take Picture</string> 
+  <string name="detect_face">Detect Face</string> 
+     <string name="app_info">This is a sample application to detect face(s) from a bitmap\n\nClick on the \'Take Picture\' to take a picture using Camera and detect the face(s) in the picture taken.</string>
+</resources>

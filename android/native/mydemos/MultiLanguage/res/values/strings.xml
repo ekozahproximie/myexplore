@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+   <string name="app_name">ICL Example</string>
+   <string name="info_text">You are here</string>
+   <string name="info_type">type</string>
+<color name="White">#ffffff</color>
+</resources>

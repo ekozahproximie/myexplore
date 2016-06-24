@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/cameralayout"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <android.view.SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="0dp" 
+        android:layout_weight="1" 
+        android:layout_height="match_parent" >
+    </android.view.SurfaceView>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:weightSum="1"
+        android:orientation="horizontal" >
+        
+        <FrameLayout
+            android:id="@+id/graph"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" />
+        <LinearLayout
+            android:id="@+id/opponentLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:visibility="invisible"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:background="#3fFFFFFF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" >
+
+                <com.neural.quickblox.ui.view.OpponentSurfaceView
+                    android:id="@+id/opponentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ProgressBar
+                    android:id="@+id/opponentImageLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="#3fFFFFFF"
+                    android:gravity="center"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+  
+   <include layout="@layout/mainscreen_menu_item" 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ToggleButton
+        android:id="@+id/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_play_pause"
+        android:onClick="onClick"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+    <ToggleButton android:id="@+id/demo_mode" android:layout_width="wrap_content"
+         android:textOn="@string/demo_mode_on"
+         android:textOff="@string/demo_mode_off"
+         
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+ <com.neural.view.ScaleLayout android:layout_width="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:id="@+id/scalelayout"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

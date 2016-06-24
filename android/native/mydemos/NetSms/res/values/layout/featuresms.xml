@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<!-- <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TableRow>
+		<TextView android:text="Feature SMS" android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="20px" android:textStyle="bold" android:typeface="serif" />
+	 </TableRow>
+	 </TableLayout> -->
+	 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TableRow>
+		<ImageButton android:id="@+id/pickDate" android:src="@drawable/calender"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<ImageButton android:id="@+id/pickTime" android:src="@drawable/clock"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/dateDisplay"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="" />
+			<DigitalClock android:id="@+id/digitalclock"
+	android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+		</TableRow>
+
+		<TableRow>
+			<CheckBox android:id="@+id/schdule" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Schdule" />
+				
+		</TableRow>
+		</TableLayout>
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<TableRow>
+	
+	<EditText android:id="@+id/phono" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text=""
+		android:inputType="phone" android:hint="Number" />
+				</TableRow>
+		<TableRow>
+			<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Message"
+		android:textSize="15px" android:textStyle="bold" />
+		</TableRow>
+		<TableRow>
+			<EditText android:id="@+id/txtMessage" android:layout_width="300px"
+		android:layout_height="130px" android:gravity="top"
+		android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+		android:imeOptions="actionSend|flagNoEnterAction" />
+		</TableRow>
+	</TableLayout>
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TableRow>
+				
+		<Button android:id="@+id/Go" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Ok"></Button>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

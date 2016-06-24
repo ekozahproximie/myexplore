@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent" >
+
+    <android.view.SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.view.SurfaceView>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:text="@string/display_mode"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/displaymode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/display"
+        android:background="@android:color/white"
+        android:drawSelectorOnTop="true"
+        android:visibility="gone"
+        android:entries="@array/displaymode"
+        android:prompt="@string/choose_prompt" />
+	
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+        layout="@layout/mainscreen_menu_item"
+        />
+      
+    <ToggleButton
+        android:id="@+id/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_play_pause"
+        android:onClick="onClick"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trimble.myglassfleet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />   
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+          <uses-library
+            android:name="com.google.android.glass"
+            android:required="true" />
+        
+        <activity
+            android:name="com.trimble.myglassfleet.FleetMenuActivity"
+            android:label="@string/app_name" 
+         	android:theme="@style/MenuTheme"
+            android:enabled="true" >
+            
+<!--              <intent-filter> -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+          <activity
+            android:name="com.trimble.myglassfleet.FleetCardScrollActivity"
+            android:label="@string/app_name" 
+            android:enabled="true" >
+        </activity>
+         <service
+            android:name="com.trimble.assetservice.AssetService"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/show_assets" />
+        </service>
+        <receiver android:name="com.trimble.assetservice.AssetUpdateReceiver"
+            android:label="@string/app_name" 
+            android:enabled="true">
+            
+            </receiver>
+        
+    </application>
+
+</manifest>

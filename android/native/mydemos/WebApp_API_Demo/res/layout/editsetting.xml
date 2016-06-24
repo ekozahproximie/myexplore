@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "#CCCCCC"
+    >
+    
+    <TextView 
+    	android:id="@+id/setting_name_id"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize ="18dp"
+    	android:gravity="center"
+    	android:layout_margin="10dp"
+    	android:textColor="#000000"
+    	android:text="Setting Name"/>
+   	<EditText android:layout_width="fill_parent"
+       	android:id="@+id/setting_edit_box_id"	
+    	android:layout_height="wrap_content"
+    	android:text="Settings"
+    	android:singleLine="True"/>
+	<Button android:layout_width="fill_parent"
+       	android:id="@+id/setting_edit_save_id"	
+    	android:layout_height="wrap_content"
+    	android:text="Save"/>
+
+</LinearLayout>

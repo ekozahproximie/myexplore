@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:dot="http://schemas.android.com/apk/res/com.neural.demo"
+	android:orientation="horizontal"	
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" >
+	    <com.neural.view.SensorConnectionView
+		android:id="@+id/deviceImgPlaceStatus"
+		 android:padding="5dp"
+	    android:visibility="gone"
+	     dot:radius="20dp"
+		android:contentDescription="@string/no"
+		android:layout_height="58dp"
+		android:layout_width="58dp" />
+	<ImageView
+		android:id="@+id/deviceImgStatus"
+		android:src="@drawable/bluetooth_status_icon_level_list"
+		android:scaleType="centerCrop"
+		android:contentDescription="@string/no"
+		android:layout_height="58dp"
+		android:layout_width="58dp" />
+  <com.neural.view.DraggableDot
+        android:id="@+id/drag_dot_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         dot:radius="40dp"
+        android:padding="1dp"
+       	android:visibility="gone"
+        dot:legend="Drag"
+        dot:anr="drop"
+        />
+  </RelativeLayout>
+		<ProgressBar
+	        android:id="@+id/busyProgressBar"
+	        android:layout_height="40dp"
+    	    android:layout_width="40dp" />
+		
+	<LinearLayout
+	    android:orientation="vertical"
+		android:paddingLeft="10dp"
+		android:paddingBottom="15dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:id="@+id/deviceTitle"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textColor="#ffffff"
+			android:textSize="16sp" />
+			
+		<TextView
+			android:layout_width="fill_parent"
+			android:id="@+id/deviceDetail"
+			android:textColor="#ffffff"
+			android:layout_height="wrap_content" />
+		
+	</LinearLayout>
+</LinearLayout>

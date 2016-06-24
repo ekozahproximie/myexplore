@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blue_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical|center_horizontal"
+         >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+	
+            
+       <TableRow android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/currentdevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/current_device"
+            android:textColor="@android:color/black" />
+        
+        <Spinner
+            android:id="@+id/spinner_devicelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="30dp"
+            android:text="@string/current_device"
+            android:textColor="@android:color/black" />
+		</TableRow>
+            
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emg_scale"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <SeekBar
+                    android:id="@+id/emgscaleseek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="3"
+                    android:background="@color/blue_enable"
+                    android:max="25"
+                    android:maxHeight="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="12"
+                    android:thumb="@xml/thumb" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="-20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="50dp"
+                    android:padding="3dp"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:padding="3dp"
+                    android:text="@string/fourhundrad"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emg_offset"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <SeekBar
+                    android:id="@+id/emgoffsetseek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="3"
+                    android:background="@color/blue_enable"
+                    android:max="30"
+                    android:maxHeight="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="10"
+                    android:thumb="@xml/thumb" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/traget_mode"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <SeekBar
+                    android:id="@+id/traget_seek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="3"
+                    android:background="@color/blue_enable"
+                    android:max="80"
+                    android:maxHeight="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="60"
+                    android:thumb="@xml/thumb" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="-20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="50dp"
+                    android:padding="3dp"
+                    android:text="@string/none"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="-45dp"
+                    android:padding="3dp"
+                    android:text="@string/constant"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="30dp"
+                    android:padding="3dp"
+                    android:text="@string/predrawn"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:text="@string/freeze"
+                    android:textColor="@android:color/black" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/constant_traget_value"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <SeekBar
+                    android:id="@+id/constant_traget_seek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="3"
+                    android:background="@color/blue_enable"
+                    android:max="320"
+                    android:maxHeight="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="0"
+                    android:thumb="@xml/thumb" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="-20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="50dp"
+                    android:padding="3dp"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:padding="3dp"
+                    android:text="@string/fourhundrad"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/boundary_mode"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <Switch
+                    android:id="@+id/boundary_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:switchTextAppearance="@style/SwitchTextAppearance"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_bg" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/boundary_mode_range"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <SeekBar
+                    android:id="@+id/boundmodeSeek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="3"
+                    android:background="@color/blue_enable"
+                    android:max="100"
+                    android:maxHeight="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="10"
+                    android:thumb="@xml/thumb" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="-20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="50dp"
+                    android:padding="3dp"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:padding="3dp"
+                    android:text="@string/hundrad"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</ScrollView>

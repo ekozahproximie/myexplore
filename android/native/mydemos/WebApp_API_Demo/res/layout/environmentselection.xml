@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "#CCCCCC"
+    >
+    <RadioGroup android:id="@+id/environmentGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+ <!--       <RadioButton android:text="Stage" 
+        	android:layout_height="wrap_content" 
+        	android:layout_width="wrap_content" 
+        	android:textColor="#000000"
+        	android:id="@+id/stage" 
+        	android:checked="true"/>
+        <RadioButton android:text="QA" 
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content" 
+	        android:textColor="#000000"
+	        android:id="@+id/qa"/>
+        <RadioButton android:text="Integration" 
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content" 
+	        android:textColor="#000000"
+	        android:id="@+id/integration"/>-->
+    </RadioGroup>
+    <Button android:layout_width="fill_parent"
+       	android:id="@+id/setting_edit_save_id"	
+    	android:layout_height="wrap_content"
+    	android:text="Save"/>
+</LinearLayout>

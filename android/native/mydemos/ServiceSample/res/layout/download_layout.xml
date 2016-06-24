@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/no_id"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/tvfilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/file_name" />
+
+    <EditText
+        android:id="@+id/edfilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tvfilename"
+        android:gravity="fill_horizontal"
+        android:hint="@string/download_link"
+        android:inputType="textWebEditText|textUri|textMultiLine"
+        android:maxLength="140"
+        android:text="@string/filename" />
+
+    <TextView
+        android:id="@+id/tvurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edfilename"
+        android:text="@string/download_link" />
+
+    <EditText
+        android:id="@+id/edURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edfilename"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvurl"
+        android:gravity="fill_horizontal"
+        android:hint="@string/download_link"
+        android:inputType="textWebEditText|textUri|textMultiLine"
+        android:maxLength="140"
+        android:text="@string/download_url" />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/download" />
+
+</RelativeLayout>

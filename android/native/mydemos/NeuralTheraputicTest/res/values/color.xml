@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="blue_color">#FF63B8FF</drawable>
+	 <color name="black">#000000</color>
+     <color name="blue">#0000FF</color>
+     <color name="red">#ff0000</color>
+     
+     <color name="blue_enable">#0D4F8B</color>
+     <color name="blue_disable">#AA0D4F8B</color>
+     <color name="blue_focus">#FD4F8B</color>
+     <color name="blue_pressed">#1464F4</color>
+     
+     <color name="DialogBackdropColor">#99000000</color> 
+      <color name="ButtonTextColor">@android:color/black</color>  
+</resources>

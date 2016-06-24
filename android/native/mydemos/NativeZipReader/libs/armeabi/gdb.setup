@@ -1,0 +1,3 @@
+set solib-search-path /cygdrive/e/Mobile/Project/NativeZipReader/obj/local/armeabi
+directory /cygdrive/c/android-ndk-r4b/build/platforms/android-3/arch-arm/usr/include
+directory /cygdrive/e/Mobile/Project/NativeZipReader/jni

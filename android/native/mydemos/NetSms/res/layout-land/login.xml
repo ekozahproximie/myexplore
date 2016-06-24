@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:background="@drawable/smsbackground" android:orientation="vertical">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="20px" />
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TableRow>
+			<TextView android:textColor="#787878" android:textSize="20px"
+				android:text="User Name:" android:width="120px" />
+			<EditText android:id="@+id/txtUserName" android:width="200px"
+				android:hint="Mobile no" android:numeric="integer" android:digits="0123456789"
+				android:maxLength="10" />
+			<TextView android:width="40px" />
+			<ImageButton android:id="@+id/create" android:src="@drawable/user"></ImageButton>
+		</TableRow>
+		<TableRow>
+			<TextView android:textColor="#787878" android:textSize="20px"
+				android:text="Password:" />
+			<EditText android:id="@+id/txtPassword" android:password="true" />
+			<TextView />
+			<TextView android:textColor="#787878" android:text="  New User"
+				android:textSize="20px" />
+		</TableRow>
+		<TableRow>
+			<TextView />
+			<CheckBox android:id="@+id/chkRememberPassword"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#787878" android:textSize="17px" android:text="Remember Me" />
+			<TextView android:width="40px" />
+			<ImageButton android:id="@+id/forgot" android:src="@drawable/forgot" />
+		</TableRow>
+		<TableRow>
+			<TextView />
+			<Button android:id="@+id/buttonSignIn" android:layout_width="fill_parent"
+				android:layout_height="50px" android:textColor="#787878"
+				android:textSize="17px" android:text="Login" />
+			<TextView />
+			<TextView android:textColor="#707878" android:text=" Password ?"
+				android:textSize="20px" />
+		</TableRow>
+	</TableLayout>
+	 <WebView     android:id="@+id/webview"       
+  android:layout_width="fill_parent"        
+  android:layout_height="fill_parent"    />
+</LinearLayout>

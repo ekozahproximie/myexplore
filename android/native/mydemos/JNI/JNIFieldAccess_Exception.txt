@@ -1,0 +1,27 @@
+
+bin>javap -s -p com.spime.geo.CSpmGeocodeResult
+
+bin>javap -s com.spime.geo.CSpmGeocodeResult
+
+
+jthrowable exc;
+
+		     exc = (env)->ExceptionOccurred();
+		     										if (exc) {
+		     											/* We don't do much with the exception, except that
+		     											 we print a debug message for it, clear it, and
+		     											 throw a new exception. */
+		     											jclass newExcCls;
+		     											(env)->ExceptionDescribe();
+		     											(env)->ExceptionClear();
+		     											newExcCls = (env)->FindClass("java/lang/IllegalArgumentException");
+		     											if (newExcCls == NULL) {
+		     												/* Unable to find the exception class, give up. */
+		     												return ;
+		     											}
+		     										(env)->ThrowNew( newExcCls, "thrown from C code");
+		     										}
+		     										if (fid == 0) {
+			__android_log_print(ANDROID_LOG_DEBUG, DEBUG_TAG,
+					"\n pptszStreetNamenot found");
+		}

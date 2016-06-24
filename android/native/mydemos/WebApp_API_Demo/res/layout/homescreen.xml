@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background = "#ffffff"
+    >
+    <ImageView 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center" 
+    	android:src="@drawable/navteq_media_solutions2" 
+    	android:id="@+id/imageView1"
+    	android:layout_marginTop="30dp"
+    	android:layout_marginBottom="30dp"
+    	/>
+    
+
+
+    	
+    <Button android:layout_width="fill_parent"
+    	android:id="@+id/home_screen_button_banner"    
+    	android:layout_height="wrap_content"
+    	android:text="Banner"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:textSize="18dip" android:textStyle="bold"/>
+
+    <Button 
+    	android:id="@+id/home_screen_dealfinder"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="Deal Finder"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:textSize="18dip" android:textStyle="bold"
+    	/>
+
+	<Button android:layout_width="fill_parent"
+    	android:id="@+id/home_screen_ad_wallet"    
+    	android:layout_height="wrap_content"
+    	android:text="Ad Wallet"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:textSize="18dip" android:textStyle="bold"
+    	/>
+
+   	<Button android:layout_width="fill_parent"
+       	android:id="@+id/home_screen_button_settings"	
+    	android:layout_height="wrap_content"
+    	android:text="Settings"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:textSize="18dip" android:textStyle="bold"
+    	/>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background = "#ffffff"
+	    >
+			<Button android:layout_width="fill_parent"
+		    	android:id="@+id/home_screen_button_about" 
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    	android:text="About"
+		    	android:layout_marginLeft="20dp"
+		    	android:layout_marginRight="20dp"
+		    	android:textSize="18dip" android:textStyle="bold"
+		    	/>
+		    	
+		  	<!--    	    	
+		   	<Button android:layout_width="fill_parent"
+		    	android:id="@+id/home_screen_button_faq"   
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    	android:text="FAQ"
+		    	android:layout_marginLeft="0dp"
+		    	android:layout_marginRight="20dp"
+		    	android:textSize="18dip" android:textStyle="bold"
+		    	/>  
+    		-->
+    	</LinearLayout>
+
+</LinearLayout>

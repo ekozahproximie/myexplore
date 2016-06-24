@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+	<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#ffffff"
+	    >
+    
+	    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/webview"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+			/>
+	  	
+	   <ImageButton 
+	   		android:id="@+id/dealsslider_button_id" 
+	   		android:layout_width="wrap_content" 
+	   		android:layout_x="-11dip" 
+	   		android:src="@drawable/dealfinder_tab2" 
+	   		android:layout_height="wrap_content" 
+	   		android:layout_y="86dip"
+	   		/>
+    
+	</AbsoluteLayout>
+
+   <ImageButton 
+   		android:id="@+id/dealfinder_button_id" 
+   		android:layout_width="wrap_content" 
+   		android:layout_height="wrap_content"
+   		android:src="@drawable/dealsbutton" 
+    	android:layout_alignParentRight="true"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginRight="10dp"
+   		/>
+   		
+    <ImageView android:layout_height="wrap_content" 
+    	android:id="@+id/logo" 
+    	android:layout_width="wrap_content" 
+    	android:src="@drawable/copyright_navteq" 
+    	android:layout_alignParentBottom="true"
+    	android:layout_alignParentRight="true"/> 
+    	
+</RelativeLayout>

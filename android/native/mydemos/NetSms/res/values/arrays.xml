@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>  
+   <string-array name="titlelist">  
+        <item>@string/tit1</item>  
+        <item>@string/tit2</item>  
+        <item>@string/tit3</item>  
+    </string-array>  
+</resources>  

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="#000000"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/hello" />
+	
+	<TextView android:text="Navigation" android:id="@+id/secondTextView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_horizontal" android:textSize="42sp"></TextView>
+	<LinearLayout android:orientation="horizontal" 
+	android:layout_width="fill_parent" android:layout_height="fill_parent" >
+	<TextView android:text="Ma" android:id="@+id/thirdTextView"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:gravity="left" android:textSize="42sp"></TextView>
+		<TextView android:id="@+id/firstTextView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="left" android:text="Position"
+		android:textSize="42sp" />
+		</LinearLayout>
+</LinearLayout>

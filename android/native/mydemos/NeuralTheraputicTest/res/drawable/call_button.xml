@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_lockscreen_decline_normal" android:state_checked="true"/>
+    <item android:drawable="@drawable/ic_lockscreen_answer_normal" android:state_checked="false"/>
+
+</selector>

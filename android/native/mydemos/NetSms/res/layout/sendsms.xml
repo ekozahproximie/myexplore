@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@drawable/sendsmsbackground"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="20px" />
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="1">
+		<TableRow>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Send To "
+				android:textSize="15px" android:textStyle="bold" android:textColor="#787878"/>
+			<AutoCompleteTextView android:id="@+id/txtPhoneNo" 
+			  android:layout_height="wrap_content" android:width="300px"
+				android:hint="Mobile no" android:layout_gravity="right"  />
+		</TableRow>
+	</TableLayout>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Message"
+		android:textSize="15px" android:textStyle="bold" android:textColor="#787878"/>
+	<EditText android:id="@+id/txtMessage" android:layout_width="300px"
+		android:layout_height="150px" android:gravity="top"
+		android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+		android:imeOptions="actionSend|flagNoEnterAction" android:layout_gravity="right" />
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="2">
+		<TableRow>
+			<Button android:id="@+id/logout" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Logout" 
+				/>
+				<TextView/>
+			<Button android:id="@+id/btnSendSMS" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Send SMS" 
+				android:width="200px"/>
+			<Button android:id="@+id/Clear" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Clear" android:layout_gravity="right" />
+		</TableRow>
+		
+	</TableLayout>
+<EditText  android:editable="false" 
+ android:scrollbars="vertical"
+ android:id="@+id/sendmsg" android:textSize="15px" 
+android:layout_width="fill_parent" 
+ android:layout_height="220px"/>
+ <WebView     android:id="@+id/webview"       
+  android:layout_width="fill_parent"        
+  android:layout_height="fill_parent"    />
+</LinearLayout>

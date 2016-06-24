@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:background="@drawable/smsbackground" android:orientation="vertical">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="40px" />
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" android:stretchColumns="1">
+		<TableRow android:layout_width="fill_parent" >
+			<TextView android:textColor="#787878" android:textSize="22px"
+				android:text="User Name:" android:width="120px"  
+				 
+				/>
+			<EditText android:id="@+id/txtUserName" android:width="300px" 
+			 android:inputType="phone"    android:layout_gravity="right"
+			     android:text=""  
+				android:hint="Mobile no" android:digits="0123456789" android:numeric="integer"
+				android:maxLength="10"   />
+		</TableRow>
+		<TableRow>
+			<TextView android:textColor="#787878" android:textSize="22px" android:width="120px"
+			 
+				android:text="Password:" />
+			<EditText android:id="@+id/txtPassword" android:hint="xxxx" 
+			android:inputType="textPassword" android:text="" android:width="300px" 
+			 android:password="true" android:padding="3dip"   android:layout_gravity="right"/>
+		</TableRow>
+		<TableRow>
+			<TextView />
+			<CheckBox android:id="@+id/chkRememberPassword"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#787878" android:textSize="17px" android:text="Remember Password"
+				android:padding="40dip"   android:layout_gravity="right" />
+		</TableRow>
+		<TableRow>
+			<TextView />
+			<Button android:id="@+id/buttonSignIn" android:width="300px"
+				android:layout_height="wrap_content" android:textColor="#787878"
+				android:textSize="17px" android:text="Login" android:layout_gravity="right" />
+		</TableRow>
+
+	</TableLayout>
+	<TextView android:layout_height="20px" android:layout_width="wrap_content"/>
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		 android:id="@+id/tblntarialview" >
+		<TableRow>
+			
+<ImageButton android:id="@+id/create" android:layout_marginLeft="10px" android:src="@drawable/user" >
+</ImageButton>
+<TextView android:layout_width="205px"/>
+<ImageButton  android:id="@+id/forgot"   
+android:src="@drawable/forgot" android:layout_gravity="right"    />
+
+		</TableRow>
+		<TableRow>
+			<TextView android:textColor="#000000" android:text="  New user"/>
+			<TextView />
+			<TextView android:textColor="#000000" android:text="Password ?" 
+			android:layout_width="fill_parent" android:layout_gravity="right" />
+			</TableRow>
+	</TableLayout>
+</LinearLayout>

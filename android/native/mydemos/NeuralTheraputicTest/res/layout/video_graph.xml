@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.view.SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </android.view.SurfaceView>
+
+        <FrameLayout
+            android:id="@+id/graph"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+  
+<com.quickblox.videochatsample.ui.view.OpponentSurfaceView
+            android:id="@+id/opponentView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+    <Spinner
+        android:id="@+id/displaymode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/display"
+        android:background="@android:color/white"
+        android:drawSelectorOnTop="true"
+        android:visibility="gone"
+        android:entries="@array/displaymode"
+        android:prompt="@string/choose_prompt" />
+	 <include layout="@layout/mainscreen_menu_item" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+       
+    <ToggleButton
+        android:id="@+id/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_play_pause"
+        android:onClick="onClick"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+<ToggleButton android:id="@+id/demo_mode" android:layout_width="wrap_content"
+        android:textOn="@string/demo_mode_on"
+         android:textOff="@string/demo_mode_off"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         
+         android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+ <com.neural.view.ScaleLayout android:layout_width="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:id="@+id/scalelayout"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

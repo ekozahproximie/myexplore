@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<TextView android:text="Feature SMS" android:id="@+id/TextView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="20px" android:textStyle="bold" android:typeface="serif" />
+	<TextView android:text="Change Password" android:id="@+id/TextView02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="20px" android:textStyle="bold" android:typeface="serif" />
+</LinearLayout>

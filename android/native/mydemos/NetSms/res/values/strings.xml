@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SMS</string>
+	<string name="loginapp_name">Login</string>
+	<string name="sendapp_name">Send SMS</string>
+	<string name="login_waring">Please provide vaild User name and password
+	</string>
+	<string name="login_url">http://wwwa.way2sms.com/auth.cl</string>
+	<string name="login_refererurl">http://wwwa.way2sms.com/content/index.html</string>
+	<string name="login_errorNonet">Connection timed out: connect</string>
+	<string name="login_errorurl">entry.jsp</string>
+	<string name="login_sucesscode">200</string>
+	<string name="login_redirectcode">302</string>
+	<string name="login_redirectcodeFail">Invalid Request</string>
+	<string name="login_invalidPhoneno">Invalid Phone no</string>
+	<string name="login_sucesscodeFail">Login fail</string>
+	<string name="login_loginSucess">Login Sucess</string>
+	<string name="login_fileNotFoundcode">404</string>
+	<string name="login_redirecturl">http://wwwa.way2sms.com//./jsp/Main.jsp?id=513965EF85E665EE846F961C4CC16932.a402
+	</string>
+	<string name="sendsms_invalidphoneno">Please provide valid Phone no</string>
+	<string name="sendsms_invalidmsg">Message should not be empty !</string>
+	<string name="sendsms_msgsend">Message Send</string>
+	<string name="sendsms_msgerror">Server error message not send</string>
+	<string name="sendsms_url">http://wwwa.way2sms.com/FirstServletsms?custid=
+	</string>
+	<string name="sendsms_refererurl">http://wwwa.way2sms.com//jsp/InstantSMS.jsp?val=0
+	</string>
+	<string name="logout_url">http://wwwa.way2sms.com//LogOut</string>
+	<string name="logout_refererurl">http://wwwd.way2sms.com//jsp/Main.jsp?id=4880644172D286B61ACC646F5A9B909C.a402
+	</string>
+	<string name="logout_fail">Logout Fail</string>
+	<string name="logout_sucess">Logout Sucess</string>
+	<string name="forget_url">http://wwwd.way2sms.com//jsp/ForgotPassword.jsp
+	</string>
+	<string name="forget_refererurl">http://wwwd.way2sms.com/jsp/ForgotPassword.jsp?text=3
+	</string>
+	<string name="createuser_url">http://wwwk.way2sms.com/jsp/UserRegistration.jsp</string>
+	<string name="forget_subcriber_main_url">http://wwwa.way2sms.com//Subscriber</string>
+	<string name="subcri_refererurl">http://wwwk.way2sms.com/jsp/UserRegistration.jsp
+	</string>
+	<string name="forgetpassword_msg">Password has send to your mobile...</string>
+	<string name="tit1">Mr</string>
+	<string name="tit2">Mrs</string>
+	<string name="tit3">Miss</string>
+	<string name="usertitle">Enter Your details </string>
+	<string name="dob_warning">Enter Your Date Of Birth </string>
+	<string name="name_warning">Enter Your Name </string>
+	<string name="email_warning">Enter Your Email Address</string>
+	<string name="phone_warning">Enter Your Phone number</string>
+	<string name="sms_verification">Please Check your inbox</string>
+	<string name="alert_dialog_username">User Name</string>
+	<string name="alert_dialog_password">Password</string>
+	<string name="alert_dialog_ok">Ok</string>
+	<string name="alert_dialog_cancel">cancel</string>
+	<string name="alert_dialog_text_entry">Forget password</string>
+	
+	<string name="userinfo">Please confirm your mobile number. We verify your mobile number by sending password on your mobile as SMS.Please ensure your mobile is ALONG WITH YOU and is SWITCHED ON. We will send your password on your mobile as soon as you click on \'Ok\' Button. You need this password to start using this Application.
+</string>
+</resources>
+

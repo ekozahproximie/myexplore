@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<string name="hello">Hello World, SUPLTI!</string>
+	<string name="app_name">Phonetest</string>
+	<string name="service_state">Serivice State</string>
+	<string name="cell_location">Cell Location</string>
+	<string name="client_ip">127.0.0.1</string>
+	<string name="connect">Connect</string>
+	<string name="connect_status">Connection Status</string>
+	<string name="call_state">Call Status</string>
+	<string name="bind_pcm">Bind To Platform</string>
+	<string name="unbind_pcm">unBind To Platform</string>
+	<string name="data">Data</string>
+	<string name="signallevel">Signal Level</string>
+	<string name="andpcm">Android Platform Bounded Service</string>
+	<string name="get_position">Get position</string>
+	<string name="accuracy">Accuracy</string>
+	<string name="name">Name:</string>
+	<string name="signal_strength">Signal Strength:</string>
+	<string name="cellid">CellID:</string>
+	<string name="lac">Lac:</string>
+	<string name="mcc">Mcc:</string>
+	<string name="mnc">Mnc:</string>
+	<string name="updatecell">Update cell</string>
+	<string name="lat">Latitude: </string>
+	<string name="lon">Longitude:</string>
+	<string name="start">Start Service</string>
+	<string name="stop">Stop Service</string>
+
+</resources>

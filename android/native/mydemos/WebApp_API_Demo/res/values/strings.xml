@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">WebApp API Demo</string>
+
+		<!-- Web App API Server Location -->
+	<string name="waapi_server_location">http://stage.lpaweb.net/</string>
+	
+	<!-- Web App affiliate's supplied values -->
+	<string-array name="affliates_values">
+		<!-- affiliatenametag -->
+		<item>TEST</item> 
+		<!-- <item>TEST</item>-->
+		<!--  partnername  -->
+		<item>webkit</item>
+		<!-- <item>webkit</item> -->
+		<!-- securityseed -->
+		<item>null</item>
+	</string-array>
+	<string name="app_version">1.0.9</string>
+		
+</resources>

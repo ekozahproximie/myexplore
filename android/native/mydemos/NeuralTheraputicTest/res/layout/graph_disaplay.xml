@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:background="@android:color/white"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/graph"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:text="@string/display_mode"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/displaymode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/display"
+        android:background="@android:color/white"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/displaymode"
+        android:prompt="@string/choose_prompt" />
+
+    <include layout="@layout/mainscreen_menu_item" 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+<ToggleButton android:id="@+id/demo_mode" android:layout_width="wrap_content"
+        android:textOn="@string/demo_mode_on"
+         android:textOff="@string/demo_mode_off"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_margin="20dp"
+        android:layout_height="wrap_content" />
+
+ <com.neural.view.ScaleLayout android:layout_width="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:id="@+id/scalelayout"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

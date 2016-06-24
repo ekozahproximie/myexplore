@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyGlassFleet</string>
+    <string name="app_name_internal">MyGlassFleetView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Menu item strings. -->
+    <string name="read_aloud">Read Asset</string>
+     <string name="show_asset">Show All Asset</string>
+    <string name="stop">Stop</string>
+    <string name="vehicle_combine">Combine</string>
+    <string name="vehicle_floater">Floater</string>
+    <string name="vehicle_generic">Generic</string>
+    <string name="vehicle_large_row_crop">Tractor - Large Row Crop</string>
+    <string name="vehicle_medium_row_crop">Tractor - Medium Row Crop</string>
+    <string name="vehicle_smalll_row_crop">Tractor - Small Row Crop</string>
+    <string name="vehicle_sugarcane_harvestor">Sugarcane Harvester</string>
+    <string name="vehicle_tractor">Tractor</string>
+    <string name="vehicle_tractor_4wd">Tractor - 4WD</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/iclLayout">
+	<EditText android:text="" android:hint="" android:id="@+id/edText" 
+	android:layout_width="50dip" android:layout_height="wrap_content"></EditText>
+	<ImageView android:layout_width="wrap_content" android:layout_below="@+id/edText"
+		android:layout_height="wrap_content" android:background="@drawable/background"
+		android:id="@+id/countryimage" android:layout_above="@+id/infotext"></ImageView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/info_text"
+		android:layout_alignParentBottom="true" android:textColor="@color/White"
+		android:textSize="24dip" android:layout_centerHorizontal="true"
+		android:id="@+id/infotext"></TextView>
+
+</RelativeLayout>

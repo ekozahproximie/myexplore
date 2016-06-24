@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NativeZipReader</string>
+    <string name="execute">Execute</string>
+</resources>

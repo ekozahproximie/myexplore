@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neural.demo"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="1.0.0.39" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.neural.activity.NeuralApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.neural.demo.MainActivity"
+            android:label="@string/app_name" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.neural.activity.AlertDialogActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            
+            android:theme="@style/AlertDialogActivityTheme" >
+        </activity>
+<!--         android:screenOrientation="landscape" -->
+        <activity
+            android:name="com.neural.activity.GraphSettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.neural.activity.GameActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.neural.activity.MediaSettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.neural.activity.RehabSettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SpinnerTheme" >
+        </activity>
+        <activity
+            android:name="com.neural.activity.DeviceSettingsActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.neural.activity.SettingsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SpinnerTheme" >
+        </activity>
+        
+        <activity
+            android:name="com.neural.activity.SettingTabActivity"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+      
+        <activity
+            android:name="com.neural.quickblox.UsersListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="com.neural.quickblox.activity.SignInActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+        <activity
+            android:name="com.neural.quickblox.activity.ShowUserActivity"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        <activity
+            android:name="com.neural.activity.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.bounce.balloongame.AndroidGame"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize|locale"
+            android:launchMode="singleTask">
+           
+        </activity>
+        <activity
+            android:name="com.neural.demo.VideoCapture"
+            android:label="@string/app_name"
+            android:alwaysRetainTaskState="true"
+               android:screenOrientation="landscape" 
+        	android:launchMode="singleTop"
+            
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.microphone" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    
+      <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+
+</manifest>

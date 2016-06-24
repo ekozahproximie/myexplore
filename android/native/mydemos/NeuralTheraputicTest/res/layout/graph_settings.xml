@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blue_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graph_style"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <Switch
+                    android:id="@+id/graph_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:switchTextAppearance="@style/SwitchTextAppearance"
+                    android:textOff="@string/linear"
+                    android:textOn="@string/bar"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_bg" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grid"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <Switch
+                    android:id="@+id/grid_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:switchTextAppearance="@style/SwitchTextAppearance"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_bg" />
+            </TableRow>
+
+            <TableRow android:layout_margin="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_base"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <SeekBar
+                    android:id="@+id/timebaseSeek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_span="3"
+                    android:background="@color/blue_enable"
+                    android:max="25"
+                    android:maxHeight="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progress="5"
+                    android:thumb="@xml/thumb" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="-20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="50dp"
+                    android:padding="3dp"
+                    android:text="@string/five"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:padding="3dp"
+                    android:text="@string/thirty"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/setting_page_text_size" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp" >
+
+                <Button
+                    android:id="@+id/gridcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_blue"
+                    android:padding="5dp"
+                    android:text="@string/grid_color"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/setting_page_text_size" />
+            </TableRow>
+
+            <TableRow android:layout_margin="10dp" >
+
+                <Button
+                    android:id="@+id/basecolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_blue"
+                    android:padding="5dp"
+                    android:text="@string/base_color"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/setting_page_text_size" />
+            </TableRow>
+        </TableLayout>
+
+        
+    </LinearLayout>
+
+</ScrollView>

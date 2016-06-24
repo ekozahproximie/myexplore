@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BgdTexture</string>
+    <string name="app_description">Vuforia BackgroundTextureAccess Sample Application</string>
+    <string name="button_start">Start</string>
+    
+    <string name="menu_back">About</string>
+    <string name="menu_flash">Flash</string>
+    <string name="menu_flash_error_on">Unable to turn on flash</string>
+    <string name="menu_flash_error_off">Unable to turn off flash</string>
+    <string name="menu_contAutofocus">Autofocus</string>
+    <string name="menu_contAutofocus_error_on">Unable to activate Continuous Auto-Focus</string>
+    <string name="menu_contAutofocus_error_off">Unable to deactivate Continuous Auto-Focus</string>
+        
+    <string name="splash_screen_description">Vuforia Splash</string>
+    
+</resources>

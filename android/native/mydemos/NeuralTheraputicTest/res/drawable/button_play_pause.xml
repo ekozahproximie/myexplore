@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item 
+		android:state_checked="true"
+		android:state_pressed="true"
+		android:drawable="@drawable/rec_button_stop" /> 
+	<item 
+		android:state_checked="true"
+		android:drawable="@drawable/rec_button_stop" /> 
+           
+	<item 
+		android:state_pressed="true"
+		android:drawable="@drawable/rec_button" /> 
+            
+     <item android:drawable="@drawable/rec_button" /> <!-- default -->
+     
+ </selector> 

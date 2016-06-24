@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">ServiceSample</string>
+    <string name="download">Download </string>
+    <string name="download_link">Download URL</string>
+    <string name="download_url">http://www.objc.io/images/covers/10.jpg</string>
+    <string name="filename">batman.jpg</string>
+    <string name="file_name">File name</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="notify_message">Download complete</string>
+    <string name="notify_title">Download Status</string>
+    
+    <string name="startservice">Start Service</string>
+    <string name="stopservice">Stop Service</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

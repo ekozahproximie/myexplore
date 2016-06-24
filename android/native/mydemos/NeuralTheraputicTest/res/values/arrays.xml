@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="setting_title">
+        <item>@string/graph_settings</item>
+        <item>@string/rehab_settings</item>
+        <item>@string/media_settings</item>
+        <item >@string/device_settings</item>
+     </string-array>
+     <!-- Used in activity/VideoCapture.java -->
+    <string-array name="displaymode">
+        <item>@string/video</item>
+        <item>@string/graph</item>
+        <item>@string/v_graph</item>
+    </string-array>
+    
+</resources>

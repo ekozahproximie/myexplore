@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		
+		<TableRow>
+			<ImageView android:id="@+id/ImageView01" android:src="@drawable/sms"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" />
+			<EditText android:id="@+id/txtUserName" 
+				android:hint="Mobile no" android:inputType="phone"  android:numeric="integer" android:digits="0123456789"
+				android:maxLength="10" android:width="120px" />
+		</TableRow>
+		<TableRow>
+			<Button android:id="@+id/ok" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Ok" />
+			<Button android:id="@+id/cancel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Cancel" />
+		</TableRow>
+	</TableLayout>
+
+
+
+
+
