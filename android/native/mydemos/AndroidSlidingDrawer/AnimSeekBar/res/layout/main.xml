@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:stretchColumns="1"
+>
+	
+	<TableRow>
+		<TextView
+		    android:padding="4dip"
+		    android:layout_gravity="center_vertical|right"
+		    android:textStyle="bold"
+		    android:text="Radius:"
+		/>
+		<SeekBar  
+		    android:id="@+id/seek_bar2"
+		    android:padding="4dip" android:max="20" 
+		/>
+	</TableRow>
+</TableLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:panel="http://schemas.android.com/apk/res/org.panel"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<org.panel.Panel
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/topPanel"
+			android:paddingBottom="20dip"
+			panel:position="top"
+			panel:animationDuration="1000"
+			panel:linearFlying="true"
+			panel:openedHandle="@drawable/top_switcher_expanded_background"
+			panel:closedHandle="@drawable/top_switcher_collapsed_background">
+			<Button
+				android:id="@id/panelHandle"
+				android:layout_width="fill_parent"
+				android:layout_height="33dip" />
+			<LinearLayout
+				android:id="@id/panelContent"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="From the Top -> Down"
+					android:textSize="16dip"
+					android:padding="4dip"
+					android:textStyle="bold" />
+
+				<ImageView
+					android:src="@drawable/android_skateboard"
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+			</LinearLayout>
+		</org.panel.Panel>
+
+	</LinearLayout>
+</FrameLayout>

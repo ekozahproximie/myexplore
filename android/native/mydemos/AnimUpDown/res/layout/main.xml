@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ViewFlipper android:id="@+id/flipper"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include android:id="@+id/flipping_view_1" layout="@layout/first_view" />
+		<include android:id="@+id/flipping_view_2" layout="@layout/second_view" />
+	</ViewFlipper>
+	<Button android:id="@+id/first" android:text="first" android:layout_centerInParent="true"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	<Button android:id="@+id/second" android:text="Second" android:layout_toRightOf="@+id/first"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	 android:layout_centerInParent="true"></Button>
+</RelativeLayout> 

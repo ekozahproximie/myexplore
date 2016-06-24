@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>  
+   <string name="goto_first">Slide down to see the first panel</string> 
+ <string name="goto_second">Slide up to see the second panel</string>  
+<string name="loremipsum1">Lorem ipsum dolor sit amet...</string> 
+<string name="loremipsum2">Sed ut perspiciatis unde omnis iste...</string>   
+ <string name="app_name">AccordionSample</string> 
+ </resources>

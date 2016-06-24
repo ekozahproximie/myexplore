@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:shrinkColumns="0,1"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="@string/latitude" />
+
+            <TextView android:id="@+id/txt_latitude" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="@string/longitude" />
+
+            <TextView android:id="@+id/txt_longitude" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="@string/accuracy" />
+
+            <TextView android:id="@+id/txt_accuracy" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="@string/time" />
+
+            <TextView android:id="@+id/txt_time" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="@string/record_status" />
+
+            <TextView android:id="@+id/txt_status" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <Button
+                android:id="@+id/btn_start"
+                android:text="@string/start" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:text="@string/stop" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:text="@string/login" />
+            
+             <Button
+                android:id="@+id/btnSync"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="@string/sync_now"/>
+            
+
+            
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+              <Button
+                android:id="@+id/btnAccountList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="@string/accountlist"/>
+
+            
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <CheckBox
+                    android:id="@+id/cbIsSyncable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    
+                    android:enabled="false"
+                    android:text="@string/syncable"/>
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cbAutoSync"
+                    
+                    
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/auto_sync"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="@string/status_unknown"
+                    android:enabled="false"
+                    android:padding="10dp"/>
+
+</LinearLayout>
